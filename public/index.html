@@ -2,7 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <!-- Tag para tornar o site responsivo em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat Dinâmico (Texto & Áudio)</title>
+
+  <!-- Vincular ao seu arquivo CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -58,9 +62,10 @@
     </section>
   </div>
 
-  <!-- Socket.IO -->
+  <!-- Socket.IO (seu servidor deve servir em /socket.io/socket.io.js) -->
   <script src="/socket.io/socket.io.js"></script>
-  <!-- Arquivo JS principal -->
+
+  <!-- Seu arquivo JS principal (por exemplo, main.js) -->
   <script src="js/main.js"></script>
 </body>
 </html>
