@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Dinâmico (Texto & Áudio)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Chat Dinâmico (Texto &amp; Áudio)</h1>
+    </header>
+
+    <!-- Seção de login (entrar na sala) -->
+    <section id="login" class="card">
+      <h2>Entrar em uma Sala</h2>
+
+      <div class="form-group">
+        <label for="sala">Sala</label>
+        <input type="text" id="sala" placeholder="Ex.: sala1" />
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <!-- Campo de senha (oculto) -->
+        <input type="password" id="senha" placeholder="Opcional" />
+      </div>
+
+      <div class="form-group">
+        <label for="nomeUsuario">Seu nome</label>
+        <input type="text" id="nomeUsuario" placeholder="Ex.: Maria" />
+      </div>
+
+      <button id="btnEntrar" class="btn">Entrar</button>
+      <p id="erroSala" class="erro"></p>
+    </section>
+
+    <!-- Seção do chat -->
+    <section id="chat" class="card" style="display: none;">
+      <h2 id="tituloSala"></h2>
+
+      <!-- Área onde as mensagens serão adicionadas -->
+      <div id="mensagens" class="mensagens-container"></div>
+
+      <!-- Formulário de envio de texto -->
+      <div class="chat-controls">
+        <input type="text" id="campoMensagem" placeholder="Digite sua mensagem..." />
+        <button id="btnEnviarTexto" class="btn btn-send">Enviar</button>
+      </div>
+
+      <!-- Controles de gravação/envio de áudio -->
+      <div class="audio-controls">
+        <button id="btnGravarAudio" class="btn">Gravar Áudio</button>
+        <button id="btnPararGravacao" class="btn" disabled>Parar</button>
+        <button id="btnEnviarAudio" class="btn btn-send" disabled>Enviar Áudio</button>
+        <p id="statusGravacao" class="status"></p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Socket.IO -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Arquivo JS principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

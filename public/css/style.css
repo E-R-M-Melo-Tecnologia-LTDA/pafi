@@ -1,0 +1,143 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #444;
+  }
+  
+  /* Cartão (card) para login/chat */
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Títulos (Seção) */
+  .card h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #555;
+  }
+  
+  /* Grupo de formulário */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .form-group input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Botões */
+  .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #6660ee;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #5852c7;
+  }
+  
+  /* Botão de enviar (diferenciado, se quiser) */
+  .btn-send {
+    background: #00a862;
+  }
+  
+  .btn-send:hover {
+    background: #00824c;
+  }
+  
+  /* Mensagens */
+  .mensagens-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #fafafa;
+  }
+  
+  .mensagens-container p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  /* Controles do chat (texto) */
+  .chat-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-controls input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Controles de áudio */
+  .audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Mensagens de erro e status */
+  .erro {
+    color: #ff3333;
+    margin-top: 10px;
+  }
+  
+  .status {
+    margin-left: 10px;
+    font-style: italic;
+    color: #666;
+  }
+  
