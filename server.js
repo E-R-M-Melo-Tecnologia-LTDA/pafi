@@ -5,7 +5,7 @@ const { Server } = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-  path: '/chat/socket.io/', // Define o caminho correto
+  path: '/socket.io/', // Define o caminho correto
 });
 
 // Armazena a senha das salas dinamicamente em memória
