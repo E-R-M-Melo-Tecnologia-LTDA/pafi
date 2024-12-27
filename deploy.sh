@@ -20,7 +20,7 @@ docker rm $CONTAINER_NAME 2>/dev/null || true
 echo "==== Running new container ===="
 docker run -d \
   --name $CONTAINER_NAME \
-  -p 3000:3000 \
+  -p 3001:3001 \
   $IMAGE_NAME
 
 echo "==== Deployment complete! ===="

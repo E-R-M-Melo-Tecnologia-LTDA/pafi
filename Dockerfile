@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Informa a porta que o servidor usará
-EXPOSE 3000
+EXPOSE 3001
 
 # Define o comando padrão para iniciar a aplicação
 CMD ["npm", "start"]
