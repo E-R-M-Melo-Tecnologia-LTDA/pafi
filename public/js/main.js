@@ -1,5 +1,5 @@
 // Faz a conexão com o servidor Socket.IO
-const socket = io('/chat');
+const socket = io('https://desenhe.me/chat');
 
 // Seletores de elementos
 const loginDiv = document.getElementById('login');
